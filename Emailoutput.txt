@@ -1,0 +1,1149 @@
+Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, Quoted Printable, 598 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Jeff MAURY <jeffma...@gmail.com> Subject Re: valid p2 repository? Date Tue, 01 Dec 2015 13:18:13 GMT 
+Which artifacts are you looking for ?
+
+Jeff
+Le 1 déc. 2015 13:56, "Martin Gainty" <mgainty@hotmail.com> a écrit :
+
+> Anyone know of a valid P2 repositories ?i tried this supposedly valid p2
+> repository:
+> http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/but
+> cannot resolve any of the repository location="" for P2 artifacts or
+> plugins referenced in build.target?
+>
+> guide is here:
+>
+> http://www.eclipse.org/tycho/sitedocs/tycho-p2/tycho-p2-publisher-plugin/attach-artifacts-mojo.html
+> Thanks,
+> Martin Gainty
+> ______________________________________________
+>
+>
+
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, Quoted Printable, 623 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Martin Gainty <mgai...@hotmail.com> Subject RE: valid p2 repository? Date Tue, 01 Dec 2015 14:44:40 GMT 
+all of them but my immediate need is :
+Caused by: org.eclipse.tycho.p2.target.facade.TargetDefinitionResolutionException: Could not
+find "javax.annotation/1.2.0.v201401042248" in the repositories of the current location
+Thanks!
+Martin ______________________________________________ 
+                                 
+
+
+> Date: Tue, 1 Dec 2015 14:18:13 +0100
+> Subject: Re: valid p2 repository?
+> From: jeffmaury@gmail.com
+> To: users@maven.apache.org
+> 
+> Which artifacts are you looking for ?
+> 
+> Jeff
+> Le 1 déc. 2015 13:56, "Martin Gainty" <mgainty@hotmail.com> a écrit :
+> 
+> > Anyone know of a valid P2 repositories ?i tried this supposedly valid p2
+> > repository:
+> > http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/but
+> > cannot resolve any of the repository location="" for P2 artifacts or
+> > plugins referenced in build.target?
+> >
+> > guide is here:
+> >
+> > http://www.eclipse.org/tycho/sitedocs/tycho-p2/tycho-p2-publisher-plugin/attach-artifacts-mojo.html
+> > Thanks,
+> > Martin Gainty
+> > ______________________________________________
+> >
+> >
+ 		 	   		  
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, Quoted Printable, 1145 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Jeff MAURY <jeffma...@jeffmaury.com> Subject Re: valid p2 repository? Date Tue, 01 Dec 2015 15:19:00 GMT 
+Did you tried the standard Eclipse P2 repositories ?
+
+Jeff
+
+On Tue, Dec 1, 2015 at 3:44 PM, Martin Gainty <mgainty@hotmail.com> wrote:
+
+> all of them but my immediate need is :
+> Caused by:
+> org.eclipse.tycho.p2.target.facade.TargetDefinitionResolutionException:
+> Could not find "javax.annotation/1.2.0.v201401042248" in the repositories
+> of the current location
+> Thanks!
+> Martin ______________________________________________
+>
+>
+>
+> > Date: Tue, 1 Dec 2015 14:18:13 +0100
+> > Subject: Re: valid p2 repository?
+> > From: jeffmaury@gmail.com
+> > To: users@maven.apache.org
+> >
+> > Which artifacts are you looking for ?
+> >
+> > Jeff
+> > Le 1 déc. 2015 13:56, "Martin Gainty" <mgainty@hotmail.com> a écrit :
+> >
+> > > Anyone know of a valid P2 repositories ?i tried this supposedly valid
+> p2
+> > > repository:
+> > >
+> http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/but
+> > > cannot resolve any of the repository location="" for P2 artifacts or
+> > > plugins referenced in build.target?
+> > >
+> > > guide is here:
+> > >
+> > >
+> http://www.eclipse.org/tycho/sitedocs/tycho-p2/tycho-p2-publisher-plugin/attach-artifacts-mojo.html
+> > > Thanks,
+> > > Martin Gainty
+> > > ______________________________________________
+> > >
+> > >
+>
+>
+
+
+
+-- 
+Jeff MAURY
+
+
+"Legacy code" often differs from its suggested alternative by actually
+working and scaling.
+ - Bjarne Stroustrup
+
+http://www.jeffmaury.com
+http://riadiscuss.jeffmaury.com
+http://www.twitter.com/jeffmaury
+
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, Quoted Printable, 1517 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From pradeepkumar <pradeepkumar...@gmail.com> Subject RE: Compilation Error -Incompatible Types Date Tue, 01 Dec 2015 15:27:10 GMT 
+Hi  David , 
+
+
+This is the original post .
+
+I am facing the compilation error in my Jenkins job. 
+
+We are not getting compile time error in Eclipse for BusinessObject but we
+are getting incompatible types error in Jenkins. 
+Is there any way to resolve this issue rather than changing the source code. 
+
+
+Please find the below. 
+
+  
+[ERROR] COMPILATION ERROR : 
+[INFO] ------------------------------------------------------------- 
+[ERROR] /C:/Jenkins/jobs/XXX
+Commons/workspace/src/com/ABC/XXX/bo/BusinessObject.java:[4158,102]
+incompatible types 
+  required: com.ABC.XXX.bo.BusinessObject 
+  found:    com.ABC.bo.BusinessObject 
+[INFO] 1 error 
+[INFO] ------------------------------------------------------------ 
+
+Please help me out regarding this issue. 
+
+
+
+--
+View this message in context: http://maven.40175.n5.nabble.com/Compilation-Error-Incompatible-Types-tp5852871p5853516.html
+Sent from the Maven - Users mailing list archive at Nabble.com.
+
+---------------------------------------------------------------------
+To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+For additional commands, e-mail: users-help@maven.apache.org
+
+
+ Mime Unnamed text/plain (inline, 7-Bit, 1144 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Adrien Rivard <adrien.riv...@gmail.com> Subject Re: Compilation Error -Incompatible Types Date Tue, 01 Dec 2015 15:56:58 GMT 
+Maybe you are missing a library that is provided by  Eclipse for
+BusinessObject  but not defined in the pom.
+
+In that case you need to find that library and add it to your maven build.
+
+
+On Tue, Dec 1, 2015 at 4:27 PM, pradeepkumar <pradeepkumarscm@gmail.com>
+wrote:
+
+> Hi  David ,
+>
+>
+> This is the original post .
+>
+> I am facing the compilation error in my Jenkins job.
+>
+> We are not getting compile time error in Eclipse for BusinessObject but we
+> are getting incompatible types error in Jenkins.
+> Is there any way to resolve this issue rather than changing the source
+> code.
+>
+>
+> Please find the below.
+>
+>
+> [ERROR] COMPILATION ERROR :
+> [INFO] -------------------------------------------------------------
+> [ERROR] /C:/Jenkins/jobs/XXX
+> Commons/workspace/src/com/ABC/XXX/bo/BusinessObject.java:[4158,102]
+> incompatible types
+>   required: com.ABC.XXX.bo.BusinessObject
+>   found:    com.ABC.bo.BusinessObject
+> [INFO] 1 error
+> [INFO] ------------------------------------------------------------
+>
+> Please help me out regarding this issue.
+>
+>
+>
+> --
+> View this message in context:
+> http://maven.40175.n5.nabble.com/Compilation-Error-Incompatible-Types-tp5852871p5853516.html
+> Sent from the Maven - Users mailing list archive at Nabble.com.
+>
+> ---------------------------------------------------------------------
+> To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+> For additional commands, e-mail: users-help@maven.apache.org
+>
+>
+
+
+-- 
+Adrien Rivard
+
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, None, 1483 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Martin Gainty <mgai...@hotmail.com> Subject RE: valid p2 repository? Date Tue, 01 Dec 2015 16:08:43 GMT 
+using kepler but the <repository location="http://?" need be resolved at command-lineapologies
+but i dont know the repository urls for "standard eclipse p2 repositories"the p2 repository
+URL for kepler is...?
+Martin 
+______________________________________________ 
+                                 
+
+
+> From: jeffmaury@jeffmaury.com
+> Date: Tue, 1 Dec 2015 16:19:00 +0100
+> Subject: Re: valid p2 repository?
+> To: users@maven.apache.org
+> 
+> Did you tried the standard Eclipse P2 repositories ?
+> 
+> Jeff
+> 
+> On Tue, Dec 1, 2015 at 3:44 PM, Martin Gainty <mgainty@hotmail.com> wrote:
+> 
+> > all of them but my immediate need is :
+> > Caused by:
+> > org.eclipse.tycho.p2.target.facade.TargetDefinitionResolutionException:
+> > Could not find "javax.annotation/1.2.0.v201401042248" in the repositories
+> > of the current location
+> > Thanks!
+> > Martin ______________________________________________
+> >
+> >
+> >
+> > > Date: Tue, 1 Dec 2015 14:18:13 +0100
+> > > Subject: Re: valid p2 repository?
+> > > From: jeffmaury@gmail.com
+> > > To: users@maven.apache.org
+> > >
+> > > Which artifacts are you looking for ?
+> > >
+> > > Jeff
+> > > Le 1 déc. 2015 13:56, "Martin Gainty" <mgainty@hotmail.com> a écrit
+:
+> > >
+> > > > Anyone know of a valid P2 repositories ?i tried this supposedly valid
+> > p2
+> > > > repository:
+> > > >
+> > http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/but
+> > > > cannot resolve any of the repository location="" for P2 artifacts or
+> > > > plugins referenced in build.target?
+> > > >
+> > > > guide is here:
+> > > >
+> > > >
+> > http://www.eclipse.org/tycho/sitedocs/tycho-p2/tycho-p2-publisher-plugin/attach-artifacts-mojo.html
+> > > > Thanks,
+> > > > Martin Gainty
+> > > > ______________________________________________
+> > > >
+> > > >
+> >
+> >
+> 
+> 
+> 
+> -- 
+> Jeff MAURY
+> 
+> 
+> "Legacy code" often differs from its suggested alternative by actually
+> working and scaling.
+>  - Bjarne Stroustrup
+> 
+> http://www.jeffmaury.com
+> http://riadiscuss.jeffmaury.com
+> http://www.twitter.com/jeffmaury
+ 		 	   		  
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, Quoted Printable, 2135 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Jeff MAURY <jeffma...@jeffmaury.com> Subject Re: valid p2 repository? Date Tue, 01 Dec 2015 16:11:39 GMT 
+http://download.eclipse.org/releases/kepler
+
+Jeff
+
+On Tue, Dec 1, 2015 at 5:08 PM, Martin Gainty <mgainty@hotmail.com> wrote:
+
+> using kepler but the <repository location="http://?" need be resolved at
+> command-lineapologies but i dont know the repository urls for "standard
+> eclipse p2 repositories"the p2 repository URL for kepler is...?
+> Martin
+> ______________________________________________
+>
+>
+>
+> > From: jeffmaury@jeffmaury.com
+> > Date: Tue, 1 Dec 2015 16:19:00 +0100
+> > Subject: Re: valid p2 repository?
+> > To: users@maven.apache.org
+> >
+> > Did you tried the standard Eclipse P2 repositories ?
+> >
+> > Jeff
+> >
+> > On Tue, Dec 1, 2015 at 3:44 PM, Martin Gainty <mgainty@hotmail.com>
+> wrote:
+> >
+> > > all of them but my immediate need is :
+> > > Caused by:
+> > > org.eclipse.tycho.p2.target.facade.TargetDefinitionResolutionException:
+> > > Could not find "javax.annotation/1.2.0.v201401042248" in the
+> repositories
+> > > of the current location
+> > > Thanks!
+> > > Martin ______________________________________________
+> > >
+> > >
+> > >
+> > > > Date: Tue, 1 Dec 2015 14:18:13 +0100
+> > > > Subject: Re: valid p2 repository?
+> > > > From: jeffmaury@gmail.com
+> > > > To: users@maven.apache.org
+> > > >
+> > > > Which artifacts are you looking for ?
+> > > >
+> > > > Jeff
+> > > > Le 1 déc. 2015 13:56, "Martin Gainty" <mgainty@hotmail.com> a écrit
+> :
+> > > >
+> > > > > Anyone know of a valid P2 repositories ?i tried this supposedly
+> valid
+> > > p2
+> > > > > repository:
+> > > > >
+> > >
+> http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/but
+> > > > > cannot resolve any of the repository location="" for P2 artifacts
+> or
+> > > > > plugins referenced in build.target?
+> > > > >
+> > > > > guide is here:
+> > > > >
+> > > > >
+> > >
+> http://www.eclipse.org/tycho/sitedocs/tycho-p2/tycho-p2-publisher-plugin/attach-artifacts-mojo.html
+> > > > > Thanks,
+> > > > > Martin Gainty
+> > > > > ______________________________________________
+> > > > >
+> > > > >
+> > >
+> > >
+> >
+> >
+> >
+> > --
+> > Jeff MAURY
+> >
+> >
+> > "Legacy code" often differs from its suggested alternative by actually
+> > working and scaling.
+> >  - Bjarne Stroustrup
+> >
+> > http://www.jeffmaury.com
+> > http://riadiscuss.jeffmaury.com
+> > http://www.twitter.com/jeffmaury
+>
+>
+
+
+
+-- 
+Jeff MAURY
+
+
+"Legacy code" often differs from its suggested alternative by actually
+working and scaling.
+ - Bjarne Stroustrup
+
+http://www.jeffmaury.com
+http://riadiscuss.jeffmaury.com
+http://www.twitter.com/jeffmaury
+
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, Quoted Printable, 2545 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From <org.apache.maven.u...@io7m.com> Subject Extracting classes from a separate project? Date Tue, 01 Dec 2015 16:16:11 GMT 
+Hello.
+
+I'm intending to use some classes from the fastutil package[0]. Due
+to the size of the artifact(s), it's assumed that anyone using the
+package will use ProGuard on their application to remove unneeded
+classes. However:
+
+1. I'm writing a library.
+2. I'm using the fastutil classes in a way that does not expose them
+   in the public API of the library.
+3. I do not want everyone that uses my library to have to use something
+   like ProGuard to reduce the resulting size increases caused by
+   a dependency on fastutil.
+
+Therefore, I feel like the correct way to proceed is to create
+a module in my project that solely exists to extract a few classes
+from fastutil an expose them to the other modules that need them.
+
+One way to do this would be to use the maven-dependency-plugin to
+extract sources from the fastutil package and treat them as "generated
+sources" so that they're compiled and packaged as part of the artifact.
+
+However! This would obviously then result in conflicts (duplicate
+classes) if someone using my library also used the fastutil package.
+
+It seems like the maven-shade-plugin is capable of moving classes
+into different packages, but it seems as though it's only capable
+of working with compiled classes and therefore may not play nicely
+with IDEs.
+
+Does anyone have a better/preferred way to achieve this?
+
+M
+
+[0] http://fastutil.di.unimi.it/
+
+---------------------------------------------------------------------
+To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+For additional commands, e-mail: users-help@maven.apache.org
+
+
+ Mime Unnamed text/plain (inline, 7-Bit, 1569 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From David Evans <da...@evans6.me.uk> Subject RE: Compilation Error -Incompatible Types Date Tue, 01 Dec 2015 16:28:19 GMT 
+I'm afraid I know nothing of Jenkins so I'm not able to advise on changing that.
+
+I was suggesting you might check the source to see which of com.ABC.XXX.bo.BusinessObject
+and  com.ABC.bo.BusinessObject was being imported  and confirm which one SHOULD be being imported.
+ It might be that a difference in classpaths is allowing you to get away with a source error
+in Eclipse but not elsewhere, so the fact that it works in Eclipse doesn't guarantee it's
+right.  It's a mistake I have made in the past.
+
+If you are sure that the source is correct then my observation will not apply!  Good luck
+either way. 
+
+Regards
+
+D.E>
+
+
+-----Original Message-----
+From: pradeepkumar [mailto:pradeepkumarscm@gmail.com] 
+Sent: 01 December 2015 15:27
+To: users@maven.apache.org
+Subject: RE: Compilation Error -Incompatible Types
+
+Hi  David , 
+
+
+This is the original post .
+
+I am facing the compilation error in my Jenkins job. 
+
+We are not getting compile time error in Eclipse for BusinessObject but we are getting incompatible
+types error in Jenkins. 
+Is there any way to resolve this issue rather than changing the source code. 
+
+
+Please find the below. 
+
+  
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Jenkins/jobs/XXX
+Commons/workspace/src/com/ABC/XXX/bo/BusinessObject.java:[4158,102]
+incompatible types
+  required: com.ABC.XXX.bo.BusinessObject 
+  found:    com.ABC.bo.BusinessObject 
+[INFO] 1 error
+[INFO] ------------------------------------------------------------ 
+
+Please help me out regarding this issue. 
+
+
+
+--
+View this message in context: http://maven.40175.n5.nabble.com/Compilation-Error-Incompatible-Types-tp5852871p5853516.html
+Sent from the Maven - Users mailing list archive at Nabble.com.
+
+---------------------------------------------------------------------
+To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+For additional commands, e-mail: users-help@maven.apache.org
+
+
+---------------------------------------------------------------------
+To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+For additional commands, e-mail: users-help@maven.apache.org
+
+
+ Mime Unnamed text/plain (inline, Quoted Printable, 2192 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Curtis Rueden <ctrue...@wisc.edu> Subject Re: Extracting classes from a separate project? Date Tue, 01 Dec 2015 16:45:16 GMT 
+Great question!
+
+I see a couple of approaches:
+
+1) Technical solution: I think you are on the right track to use the
+maven-shade-plugin. But you shouldn't need the maven-dependency-plugin. The
+shade plugin is pretty powerful. Why not just make your single-module
+library artifact an "uber-JAR" consisting only of its own sources plus the
+relocated+minimized fastutil classes, using <minimizeJar>true</minimizeJar>?
+
+2) Social solution: start a discussion with the fastutil team about
+modularizing their library for a future (breaking) release. Right now the
+packages are divided by primitive type, which seems backwards to me. Better
+would be to divide by data structure, with all primitive types in each data
+structure package. Then you could cherry pick only the needed data
+structure(s) of interest. Obviously this is a longer-term solution.
+
+3) Punt. Just depend on fastutil and make no apologies. 16MB is really not
+that big of a deal these days. Is slimming ~10MB from your footprint really
+worth the developer time investment of mucking around with shade etc.?
+
+Regards,
+Curtis
+
+On Tue, Dec 1, 2015 at 10:16 AM, <org.apache.maven.user@io7m.com> wrote:
+
+> Hello.
+>
+> I'm intending to use some classes from the fastutil package[0]. Due
+> to the size of the artifact(s), it's assumed that anyone using the
+> package will use ProGuard on their application to remove unneeded
+> classes. However:
+>
+> 1. I'm writing a library.
+> 2. I'm using the fastutil classes in a way that does not expose them
+>    in the public API of the library.
+> 3. I do not want everyone that uses my library to have to use something
+>    like ProGuard to reduce the resulting size increases caused by
+>    a dependency on fastutil.
+>
+> Therefore, I feel like the correct way to proceed is to create
+> a module in my project that solely exists to extract a few classes
+> from fastutil an expose them to the other modules that need them.
+>
+> One way to do this would be to use the maven-dependency-plugin to
+> extract sources from the fastutil package and treat them as "generated
+> sources" so that they're compiled and packaged as part of the artifact.
+>
+> However! This would obviously then result in conflicts (duplicate
+> classes) if someone using my library also used the fastutil package.
+>
+> It seems like the maven-shade-plugin is capable of moving classes
+> into different packages, but it seems as though it's only capable
+> of working with compiled classes and therefore may not play nicely
+> with IDEs.
+>
+> Does anyone have a better/preferred way to achieve this?
+>
+> M
+>
+> [0] http://fastutil.di.unimi.it/
+>
+> ---------------------------------------------------------------------
+> To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+> For additional commands, e-mail: users-help@maven.apache.org
+>
+>
+
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, None, 2800 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Martin Gainty <mgai...@hotmail.com> Subject RE: valid p2 repository? Date Tue, 01 Dec 2015 17:37:21 GMT 
+using kepler but the <repository location="http://?" need be resolved at command-lineapologies
+but i dont know the repository urls for "standard eclipse p2 repositories"the p2 repository
+URL for kepler is...?
+Martin 
+______________________________________________ 
+                                 
+
+
+> From: jeffmaury@jeffmaury.com
+> Date: Tue, 1 Dec 2015 16:19:00 +0100
+> Subject: Re: valid p2 repository?
+> To: users@maven.apache.org
+> 
+> Did you tried the standard Eclipse P2 repositories ?
+> 
+> Jeff
+> 
+> On Tue, Dec 1, 2015 at 3:44 PM, Martin Gainty <mgainty@hotmail.com> wrote:
+> 
+> > all of them but my immediate need is :
+> > Caused by:
+> > org.eclipse.tycho.p2.target.facade.TargetDefinitionResolutionException:
+> > Could not find "javax.annotation/1.2.0.v201401042248" in the repositories
+> > of the current location
+> > Thanks!
+> > Martin ______________________________________________
+> >
+> >
+> >
+> > > Date: Tue, 1 Dec 2015 14:18:13 +0100
+> > > Subject: Re: valid p2 repository?
+> > > From: jeffmaury@gmail.com
+> > > To: users@maven.apache.org
+> > >
+> > > Which artifacts are you looking for ?
+> > >
+> > > Jeff
+> > > Le 1 déc. 2015 13:56, "Martin Gainty" <mgainty@hotmail.com> a écrit
+:
+> > >
+> > > > Anyone know of a valid P2 repositories ?i tried this supposedly valid
+> > p2
+> > > > repository:
+> > > >
+> > http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/but
+> > > > cannot resolve any of the repository location="" for P2 artifacts or
+> > > > plugins referenced in build.target?
+> > > >
+> > > > guide is here:
+> > > >
+> > > >
+> > http://www.eclipse.org/tycho/sitedocs/tycho-p2/tycho-p2-publisher-plugin/attach-artifacts-mojo.html
+> > > > Thanks,
+> > > > Martin Gainty
+> > > > ______________________________________________
+> > > >
+> > > >
+> >
+> >
+> 
+> 
+> 
+> -- 
+> Jeff MAURY
+> 
+> 
+> "Legacy code" often differs from its suggested alternative by actually
+> working and scaling.
+>  - Bjarne Stroustrup
+> 
+> http://www.jeffmaury.com
+> http://riadiscuss.jeffmaury.com
+> http://www.twitter.com/jeffmaury
+ 		 	   		  
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, Quoted Printable, 2135 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From <org.apache.maven.u...@io7m.com> Subject Re: Extracting classes from a separate project? Date Tue, 01 Dec 2015 17:56:15 GMT 
+'Lo,
+
+On 2015-12-01T10:45:16 -0600
+Curtis Rueden <ctrueden@wisc.edu> wrote:
+
+> Great question!
+> 
+> I see a couple of approaches:
+> 
+> 1) Technical solution: I think you are on the right track to use the
+> maven-shade-plugin. But you shouldn't need the maven-dependency-plugin. The
+> shade plugin is pretty powerful. Why not just make your single-module
+> library artifact an "uber-JAR" consisting only of its own sources plus the
+> relocated+minimized fastutil classes, using <minimizeJar>true</minimizeJar>?
+
+The project is actually a multi-module project, with several modules
+requiring access to the fastutil classes. My main concern is how well
+IDEs will be able to cope with this...
+
+> 2) Social solution: start a discussion with the fastutil team about
+> modularizing their library for a future (breaking) release. Right now the
+> packages are divided by primitive type, which seems backwards to me. Better
+> would be to divide by data structure, with all primitive types in each data
+> structure package. Then you could cherry pick only the needed data
+> structure(s) of interest. Obviously this is a longer-term solution.
+
+I expect I will approach them, but as you say, that is a longer-term
+solution and doesn't help right now.
+
+> 
+> 3) Punt. Just depend on fastutil and make no apologies. 16MB is really not
+> that big of a deal these days. Is slimming ~10MB from your footprint really
+> worth the developer time investment of mucking around with shade etc.?
+
+Unfortunately, when it comes to network bandwidth, that is still a big
+deal here and in other parts of the world.
+
+M
+
+---------------------------------------------------------------------
+To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+For additional commands, e-mail: users-help@maven.apache.org
+
+
+ Mime Unnamed text/plain (inline, 7-Bit, 1781 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Martin Gainty <mgai...@hotmail.com> Subject RE: valid p2 repository? Date Tue, 01 Dec 2015 19:05:04 GMT 
+Thanks Jeff!
+Martin 
+_______________
+
+> From: jeffmaury@jeffmaury.com
+> Date: Tue, 1 Dec 2015 16:19:00 +0100
+> Subject: Re: valid p2 repository?
+> To: users@maven.apache.org
+> 
+> Did you tried the standard Eclipse P2 repositories ?
+> 
+> Jeff
+> 
+> On Tue, Dec 1, 2015 at 3:44 PM, Martin Gainty <mgainty@hotmail.com> wrote:
+> 
+> > all of them but my immediate need is :
+> > Caused by:
+> > org.eclipse.tycho.p2.target.facade.TargetDefinitionResolutionException:
+> > Could not find "javax.annotation/1.2.0.v201401042248" in the repositories
+> > of the current location
+> > Thanks!
+> > Martin ______________________________________________
+> >
+> >
+> >
+> > > Date: Tue, 1 Dec 2015 14:18:13 +0100
+> > > Subject: Re: valid p2 repository?
+> > > From: jeffmaury@gmail.com
+> > > To: users@maven.apache.org
+> > >
+> > > Which artifacts are you looking for ?
+> > >
+> > > Jeff
+> > > Le 1 déc. 2015 13:56, "Martin Gainty" <mgainty@hotmail.com> a écrit
+:
+> > >
+> > > > Anyone know of a valid P2 repositories ?i tried this supposedly valid
+> > p2
+> > > > repository:
+> > > >
+> > http://download.eclipse.org/tools/orbit/downloads/drops/R20130827064939/repository/but
+> > > > cannot resolve any of the repository location="" for P2 artifacts or
+> > > > plugins referenced in build.target?
+> > > >
+> > > > guide is here:
+> > > >
+> > > >
+> > http://www.eclipse.org/tycho/sitedocs/tycho-p2/tycho-p2-publisher-plugin/attach-artifacts-mojo.html
+> > > > Thanks,
+> > > > Martin Gainty
+> > > > ______________________________________________
+> > > >
+> > > >
+> >
+> >
+> 
+> 
+> 
+> -- 
+> Jeff MAURY
+> 
+> 
+> "Legacy code" often differs from its suggested alternative by actually
+> working and scaling.
+>  - Bjarne Stroustrup
+> 
+> http://www.jeffmaury.com
+> http://riadiscuss.jeffmaury.com
+> http://www.twitter.com/jeffmaury
+ 		 	   		   		 	   		  
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, Quoted Printable, 1874 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From <org.apache.maven.u...@io7m.com> Subject Re: Extracting classes from a separate project? Date Tue, 01 Dec 2015 19:29:22 GMT 
+On 2015-12-01T17:56:15 +0000
+<org.apache.maven.user@io7m.com> wrote:
+> 
+> On 2015-12-01T10:45:16 -0600
+> Curtis Rueden <ctrueden@wisc.edu> wrote:
+> > Why not just make your single-module library artifact an "uber-JAR" consisting 
+> > only of its own sources plus the relocated+minimized fastutil classes, using 
+> > <minimizeJar>true</minimizeJar>?
+> 
+> The project is actually a multi-module project, with several modules
+> requiring access to the fastutil classes. My main concern is how well
+> IDEs will be able to cope with this...
+
+The answer turend out to be "very poorly", so I've gone with your
+original suggestion:
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <minimizeJar>true</minimizeJar>
+              <artifactSet>
+                <includes>
+                  <include>it.unimi.dsi:fastutil</include>
+                </includes>
+              </artifactSet>
+              <relocations>
+                <relocation>
+                  <pattern>it.unimi.dsi</pattern>
+                  <shadedPattern>com.io7m.jcanephora.jogl.fastutil</shadedPattern>
+                </relocation>
+              </relocations>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+This replaces the default jar produced by the project with one that
+contains only the required classes, and moves them into their own
+package to prevent later conflicts. The it.unimi.dsi:fastutil artifact
+is made 'optional' - I tried to use a 'provided' scope, but for some
+reason this prevented the shade plugin from seeing the dependency
+at all, even with the 'keepDependenciesWithProvidedScope' flag enabled.
+
+M
+
+---------------------------------------------------------------------
+To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+For additional commands, e-mail: users-help@maven.apache.org
+
+
+ Mime Unnamed text/plain (inline, 7-Bit, 2089 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Maria Beckham <mariabeckha...@yahoo.com.INVALID> Subject Velocity - Archetypes Question Date Tue, 01 Dec 2015 22:44:36 GMT 
+Hi there,
+Are archetypes in maven by default based on velocity engine/templates processing?
+If not, could someone pls provide us an sample example of maven archetypes using velocity
+templates(like say for example generating java source code)
+
+Thanks,Maria
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, 7-Bit, 256 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Martin Gainty <mgai...@hotmail.com> Subject disabling default plugin from phase? Date Wed, 02 Dec 2015 20:57:00 GMT 
+Folks-
+is there any way to disable a particular plugin (which is somehow declared as a default plugin
+for that phase )from executing in that phase?
+
+Thanks!
+Martin 
+______________________________________________ 
+                                                                                         
+        
+ 		 	   		  
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, Quoted Printable, 337 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Mirko Friedenhagen <mfriedenha...@gmail.com> Subject Re: disabling default plugin from phase? Date Wed, 02 Dec 2015 21:58:49 GMT 
+Hello Martin,
+
+as a hack you may override this in your pluginManagement by specifying
+an invalid phase.
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven-source-plugin.version}</version>
+                    <inherited>true</inherited>
+                    <executions>
+                        <!-- suppress seperate generation of sources-jar during
+                             run of release:stage, see
+
+http://blog.peterlynch.ca/2010/05/maven-how-to-prevent-generate-sources.html
+                        -->
+                        <execution>
+                            <id>attach-sources</id>
+                            <phase>DISABLE_FORKED_LIFECYCLE_MSOURCES-13</phase>
+                        </execution>
+                        <execution>
+                            <id>default-jar-no-fork</id>
+                            <goals>
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+Regards Mirko
+--
+http://illegalstateexception.blogspot.com/
+https://github.com/mfriedenhagen/ (http://osrc.dfm.io/mfriedenhagen)
+https://bitbucket.org/mfriedenhagen/
+
+
+On Wed, Dec 2, 2015 at 9:57 PM, Martin Gainty <mgainty@hotmail.com> wrote:
+> Folks-
+> is there any way to disable a particular plugin (which is somehow declared as a default
+plugin for that phase )from executing in that phase?
+>
+> Thanks!
+> Martin
+> ______________________________________________
+>
+>
+
+---------------------------------------------------------------------
+To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+For additional commands, e-mail: users-help@maven.apache.org
+
+
+ Mime Unnamed text/plain (inline, None, 1837 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Martin Gainty <mgai...@hotmail.com> Subject RE: disabling default plugin from phase? Date Thu, 03 Dec 2015 00:35:34 GMT 
+I'll give this a tryThanks Mirko!
+Martin-
+
+> From: mfriedenhagen@gmail.com
+> Date: Wed, 2 Dec 2015 22:58:49 +0100
+> Subject: Re: disabling default plugin from phase?
+> To: users@maven.apache.org
+> 
+> Hello Martin,
+> 
+> as a hack you may override this in your pluginManagement by specifying
+> an invalid phase.
+>                 <plugin>
+>                     <groupId>org.apache.maven.plugins</groupId>
+>                     <artifactId>maven-source-plugin</artifactId>
+>                     <version>${maven-source-plugin.version}</version>
+>                     <inherited>true</inherited>
+>                     <executions>
+>                         <!-- suppress seperate generation of sources-jar during
+>                              run of release:stage, see
+> 
+> http://blog.peterlynch.ca/2010/05/maven-how-to-prevent-generate-sources.html
+>                         -->
+>                         <execution>
+>                             <id>attach-sources</id>
+>                             <phase>DISABLE_FORKED_LIFECYCLE_MSOURCES-13</phase>
+>                         </execution>
+>                         <execution>
+>                             <id>default-jar-no-fork</id>
+>                             <goals>
+>                                 <goal>jar-no-fork</goal>
+>                             </goals>
+>                         </execution>
+>                     </executions>
+>                 </plugin>
+> Regards Mirko
+> --
+> http://illegalstateexception.blogspot.com/
+> https://github.com/mfriedenhagen/ (http://osrc.dfm.io/mfriedenhagen)
+> https://bitbucket.org/mfriedenhagen/
+> 
+> 
+> On Wed, Dec 2, 2015 at 9:57 PM, Martin Gainty <mgainty@hotmail.com> wrote:
+> > Folks-
+> > is there any way to disable a particular plugin (which is somehow declared as a
+default plugin for that phase )from executing in that phase?
+> >
+> > Thanks!
+> > Martin
+> > ______________________________________________
+> >
+> >
+> 
+> ---------------------------------------------------------------------
+> To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+> For additional commands, e-mail: users-help@maven.apache.org
+> 
+ 		 	   		  
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, Quoted Printable, 2185 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Adrien Rivard <adrien.riv...@gmail.com> Subject Re: disabling default plugin from phase? Date Thu, 03 Dec 2015 08:54:04 GMT 
+Some goals/plugins also have a skip property.
+
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-deploy-plugin</artifactId>
+<configuration>
+<!-- do not deploy that rtifact -->
+<skip>true</skip>
+</configuration>
+</plugin>
+
+
+On Thu, Dec 3, 2015 at 1:35 AM, Martin Gainty <mgainty@hotmail.com> wrote:
+
+> I'll give this a tryThanks Mirko!
+> Martin-
+>
+> > From: mfriedenhagen@gmail.com
+> > Date: Wed, 2 Dec 2015 22:58:49 +0100
+> > Subject: Re: disabling default plugin from phase?
+> > To: users@maven.apache.org
+> >
+> > Hello Martin,
+> >
+> > as a hack you may override this in your pluginManagement by specifying
+> > an invalid phase.
+> >                 <plugin>
+> >                     <groupId>org.apache.maven.plugins</groupId>
+> >                     <artifactId>maven-source-plugin</artifactId>
+> >                     <version>${maven-source-plugin.version}</version>
+> >                     <inherited>true</inherited>
+> >                     <executions>
+> >                         <!-- suppress seperate generation of sources-jar
+> during
+> >                              run of release:stage, see
+> >
+> >
+> http://blog.peterlynch.ca/2010/05/maven-how-to-prevent-generate-sources.html
+> >                         -->
+> >                         <execution>
+> >                             <id>attach-sources</id>
+> >
+>  <phase>DISABLE_FORKED_LIFECYCLE_MSOURCES-13</phase>
+> >                         </execution>
+> >                         <execution>
+> >                             <id>default-jar-no-fork</id>
+> >                             <goals>
+> >                                 <goal>jar-no-fork</goal>
+> >                             </goals>
+> >                         </execution>
+> >                     </executions>
+> >                 </plugin>
+> > Regards Mirko
+> > --
+> > http://illegalstateexception.blogspot.com/
+> > https://github.com/mfriedenhagen/ (http://osrc.dfm.io/mfriedenhagen)
+> > https://bitbucket.org/mfriedenhagen/
+> >
+> >
+> > On Wed, Dec 2, 2015 at 9:57 PM, Martin Gainty <mgainty@hotmail.com>
+> wrote:
+> > > Folks-
+> > > is there any way to disable a particular plugin (which is somehow
+> declared as a default plugin for that phase )from executing in that phase?
+> > >
+> > > Thanks!
+> > > Martin
+> > > ______________________________________________
+> > >
+> > >
+> >
+> > ---------------------------------------------------------------------
+> > To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+> > For additional commands, e-mail: users-help@maven.apache.org
+> >
+>
+>
+
+
+
+-- 
+Adrien Rivard
+
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, None, 2563 bytes) View raw message
+maven-users mailing list archives Site index · List index Message view « Date » · « Thread » Top « Date » · « Thread » From Martin Gainty <mgai...@hotmail.com> Subject RE: disabling default plugin from phase? Date Thu, 03 Dec 2015 14:23:33 GMT 
+attempting to implement tycho compile but discovered my ClassRealm changed ?it appears new
+ClassRealm "instrumented" a new lifecycle 
+Consequently i have new plugin bindings for all phases for this new lifecycle
+In particular the new process-test-resources phase plugin binding is not the plugin I want
+to execute(Which is why I am attempting to disable the default plugin for process-test-resources
+phase)
+Thanks Adrian!
+Martin 
+______________________________________________ 
+                                                                                         
+      
+
+
+> Date: Thu, 3 Dec 2015 09:54:04 +0100
+> Subject: Re: disabling default plugin from phase?
+> From: adrien.rivard@gmail.com
+> To: users@maven.apache.org
+> 
+> Some goals/plugins also have a skip property.
+> 
+> <plugin>
+> <groupId>org.apache.maven.plugins</groupId>
+> <artifactId>maven-deploy-plugin</artifactId>
+> <configuration>
+> <!-- do not deploy that rtifact -->
+> <skip>true</skip>
+> </configuration>
+> </plugin>
+> 
+> 
+> On Thu, Dec 3, 2015 at 1:35 AM, Martin Gainty <mgainty@hotmail.com> wrote:
+> 
+> > I'll give this a tryThanks Mirko!
+> > Martin-
+> >
+> > > From: mfriedenhagen@gmail.com
+> > > Date: Wed, 2 Dec 2015 22:58:49 +0100
+> > > Subject: Re: disabling default plugin from phase?
+> > > To: users@maven.apache.org
+> > >
+> > > Hello Martin,
+> > >
+> > > as a hack you may override this in your pluginManagement by specifying
+> > > an invalid phase.
+> > >                 <plugin>
+> > >                     <groupId>org.apache.maven.plugins</groupId>
+> > >                     <artifactId>maven-source-plugin</artifactId>
+> > >                     <version>${maven-source-plugin.version}</version>
+> > >                     <inherited>true</inherited>
+> > >                     <executions>
+> > >                         <!-- suppress seperate generation of sources-jar
+> > during
+> > >                              run of release:stage, see
+> > >
+> > >
+> > http://blog.peterlynch.ca/2010/05/maven-how-to-prevent-generate-sources.html
+> > >                         -->
+> > >                         <execution>
+> > >                             <id>attach-sources</id>
+> > >
+> >  <phase>DISABLE_FORKED_LIFECYCLE_MSOURCES-13</phase>
+> > >                         </execution>
+> > >                         <execution>
+> > >                             <id>default-jar-no-fork</id>
+> > >                             <goals>
+> > >                                 <goal>jar-no-fork</goal>
+> > >                             </goals>
+> > >                         </execution>
+> > >                     </executions>
+> > >                 </plugin>
+> > > Regards Mirko
+> > > --
+> > > http://illegalstateexception.blogspot.com/
+> > > https://github.com/mfriedenhagen/ (http://osrc.dfm.io/mfriedenhagen)
+> > > https://bitbucket.org/mfriedenhagen/
+> > >
+> > >
+> > > On Wed, Dec 2, 2015 at 9:57 PM, Martin Gainty <mgainty@hotmail.com>
+> > wrote:
+> > > > Folks-
+> > > > is there any way to disable a particular plugin (which is somehow
+> > declared as a default plugin for that phase )from executing in that phase?
+> > > >
+> > > > Thanks!
+> > > > Martin
+> > > > ______________________________________________
+> > > >
+> > > >
+> > >
+> > > ---------------------------------------------------------------------
+> > > To unsubscribe, e-mail: users-unsubscribe@maven.apache.org
+> > > For additional commands, e-mail: users-help@maven.apache.org
+> > >
+> >
+> >
+> 
+> 
+> 
+> -- 
+> Adrien Rivard
+ 		 	   		  
+ Mime Unnamed multipart/alternative (inline, None, 0 bytes) Unnamed text/plain (inline, Quoted Printable, 3545 bytes) View raw message
